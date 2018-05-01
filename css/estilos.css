@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Cabecera*/
+header{
+  background-color: #33e0ff;
+  overflow: auto;
+}
+.menu{
+  background: #33e0ff;
+  display: block;
+}
+.menu ul{
+  margin-left: 37%;
+  list-style: none;
+  float:left;
+  padding: 1%;
+
+}
+.menu ul li{
+
+  float:left;
+  margin-left: 10px;
+  padding: 5px;
+  display: block;
+
+}
+.menu ul li:hover{
+  background-color: #669099;
+  display: block;
+
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*Sección*/
+section{
+  margin-top:2%;
+}
+
+h3{
+  margin-left: 41%;
+}
+/*Fotos*/
+#gridFotos{
+  margin-top:2%;
+  margin-left: 14%;
+}
+img{
+  width: 400px;
+}
