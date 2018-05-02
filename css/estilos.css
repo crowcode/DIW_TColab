@@ -7,6 +7,9 @@ header{
   background-color: #33e0ff;
   overflow: auto;
 }
+.headImg{
+  margin-left: 20%;
+}
 .menu{
   background: #33e0ff;
   display: block;
@@ -16,7 +19,6 @@ header{
   list-style: none;
   float:left;
   padding: 1%;
-
 }
 .menu ul li{
 
@@ -39,6 +41,7 @@ header{
 /*Sección*/
 section{
   margin-top:2%;
+  position: relative;
 }
 
 h3{
@@ -48,7 +51,14 @@ h3{
 #gridFotos{
   margin-top:2%;
   margin-left: 14%;
+  margin-bottom:2%;
 }
-img{
+.columna img{
   width: 400px;
+}
+figure{
+  float:left;
+  padding: 1%;
+  border: thin silver solid;
+  border-bottom:  #717c7e solid;
 }
