@@ -1,17 +1,20 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: "Verdana", "Arial", Georgia, Serif;
 }
 /*Cabecera*/
 header{
-  background-color: #33e0ff;
-  overflow: auto;
+  background-color: #31B6EA;
+  overflow: hidden;
+
 }
 .headImg{
   margin-left: 20%;
 }
+/*Menu*/
 .menu{
-  background: #33e0ff;
+  background: #31B6EA;
   display: block;
 }
 .menu ul{
@@ -19,39 +22,53 @@ header{
   list-style: none;
   float:left;
   padding: 1%;
+  display: table;
+  text-align: center;
 }
 .menu ul li{
+  display: inline-block;
+  float: none;
+  padding:3px 10px;
+  margin:2px;
+  background:#fafafa;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
 
-  float:left;
-  margin-left: 10px;
-  padding: 5px;
-  display: block;
 
 }
 .menu ul li:hover{
-  background-color: #669099;
-  display: block;
+  background-color: #cccccc;
+  text-decoration: underline;
 
 }
 .menu ul li a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: #333333;
 }
 
-/*Sección*/
+/*Body*/
+body{
+  position:relative;
+}
+
 section{
   margin-top:2%;
   position: relative;
+  height: 100%;
+  margin-bottom:5%;
 }
 
 h3{
-  margin-left: 41%;
+  margin-left: 43%;
 }
 /*Fotos*/
 #gridFotos{
   margin-top:2%;
   margin-left: 14%;
   margin-bottom:2%;
+  overflow: auto;
 }
 .columna img{
   width: 400px;
@@ -61,4 +78,71 @@ figure{
   padding: 1%;
   border: thin silver solid;
   border-bottom:  #717c7e solid;
+}
+figcaption{
+  font-style: italic;
+  font-family: fantasy;
+  padding: 0.5%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+footer{
+  width: 100%;
+  background-color: #31B6EA;
+  text-align: center;
+  color: white;
+  margin-top:38%;
+  padding: 10px 0px 10px 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+/*Responsive*/
+/*Portátiles*/
+@media screen and (max-width:1024px){
+  .headImg{
+    width: 80%;
+    margin-left:15%;
+  }
+  .menu ul{
+    margin-left: 30%;
+  }
+}
+/*Tablets*/
+@media screen and (max-width:768px){
+  .headImg{
+    width: 70%;
+    margin-left:15%;
+  }
+  .menu ul{
+    margin-left: 30%;
+  }
+  .menu ul li a{
+    font-size:0.8em;
+  }
+}
+/* Smartphones horizontal: de 480 a 768 */
+@media screen and (max-width:480px){
+  .columna img{
+    width:244px;
+  }
+  figure{
+    width: 70%;
+  }
+  h3{
+    margin-left: 27%;
+  }
+  .menu ul{
+    margin-left: 12%;
+  }
+  figcaption{
+    font-size:0.7em;
+  }
+  section{
+    margin-bottom: 13%;
+  }
+  footer{
+    font-size: 0.8em;
+  }
 }
