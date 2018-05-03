@@ -2,54 +2,88 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galería fotográfica</title>
   <link rel="stylesheet" type="text/css" href="./css/estilos.css" />
+  <script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
+  <script>
+	 $(document).ready(function () {
+     //Si se ve con una pantalla menor igual a 480px
+     if($(window).width() <= 480){
+
+       $(".foto").hover(
+         function(){
+           $(this).animate({width: "366px"}, "slow");
+         },
+         function(){
+           $(this).animate({width: "244px"}, "slow");
+         }
+       );
+
+     }else{
+    //Si se ve con pantalla mayor a 480px
+       $(".foto").hover(
+         function(){
+           $(this).animate({width: "600px"}, "slow");
+         },
+         function(){
+           $(this).animate({width: "400px"}, "slow");
+         }
+       );
+     }
+
+
+    });
+	</script>
 </head>
 <body>
+
   <header>
-    <!--Imagen de cabecera-->
+    <!--Imagen de cabecera y menu-->
     <img class="headImg" src="./img/cabecera.png"/>
     <nav class="menu">
       <ul>
-        <li><a href="#">Fotógrafos</a></li>
-        <li><a href="#">Galería fotográfica</a></li>
+        <li><a href="./fotografos.html">FOTÓGRAFOS</a></li>
+        <li><a href="./galeria.html">GALERÍA FOTOGRÁFICA</a></li>
       </ul>
     </nav>
   </header>
-
+  <!--Galería de 6 fotos con <figcaption> cada una -->
   <section>
     <h3>Galería Fotográfica</h3>
     <article id="gridFotos">
       <div class="columna">
         <figure>
-          <img src="./img/pexels-photo-ba-phi.jpeg" alt="Chico con una revista encima de una red y un casette"/>
+          <img class="foto" src="./img/pexels-photo-ba-phi.jpeg" alt="Chico con una revista encima de una red y un casette"/>
           <figcaption>Red</figcaption>
         </figure>
         <figure>
-          <img src="./img/pexels-photo-keegan-everitt.jpeg" alt="En blanco y negro. Canoa en el mar y cielo con muchas nubes"/>
+          <img class="foto" src="./img/pexels-photo-keegan-everitt.jpeg" alt="En blanco y negro. Canoa en el mar y cielo con muchas nubes"/>
           <figcaption>Remar en la inmensidad</figcaption>
         </figure>
         <figure>
-          <img src="./img/pexels-photo-martin-pechy.jpeg" alt="Casa incrustada en la pared de una montaña. Al fondo imagen montañosa"/>
+          <img class="foto" src="./img/pexels-photo-martin-pechy.jpeg" alt="Casa incrustada en la pared de una montaña. Al fondo imagen montañosa"/>
           <figcaption>Casa montañosa</figcaption>
         </figure>
       </div>
       <div class="columna">
         <figure>
-          <img src="./img/pexels-photo-matthias-zomer.jpeg" alt="Hombre escupiendo fuego"/>
+          <img class="foto" src="./img/pexels-photo-matthias-zomer.jpeg" alt="Hombre escupiendo fuego"/>
           <figcaption>Fuego</figcaption>
         </figure>
         <figure>
-          <img src="./img/pexels-photo-spencer-selover.jpeg" alt="Chica con gafas mirando hacia arriba"/>
+          <img class="foto" src="./img/pexels-photo-spencer-selover.jpeg" alt="Chica con gafas mirando hacia arriba"/>
           <figcaption>Perspectiva</figcaption>
         </figure>
         <figure>
-          <img src="./img/pexels-photo-stefan-stefancik.jpeg" alt="Casa en un paisaje nevado con aurora boreal"/>
+          <img class="foto" src="./img/pexels-photo-stefan-stefancik.jpeg" alt="Casa en un paisaje nevado con aurora boreal"/>
           <figcaption>Aurora</figcaption>
         </figure>
       </div>
     </article>
   </section>
-  
+  <!--Footer -->
+  <footer>Copyright © 2018 | DIW - Tarea colaborativa | Judd Amaya y Eduardo Astolfi</footer>
+
 </body>
 </html>
