@@ -1,0 +1,244 @@
+/* estilo para todos los elementos de la pagina */
+* {
+	font-family: "Verdana", "Arial", Georgia, Serif;
+	font-size: 15px;
+	background-color: transparent;		
+}
+
+.nombre {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 15px;
+}
+
+.descripcion {
+	font-size: 1.1em;
+	height: auto;
+}
+
+/* estilo que se aplica al div contenedor de toda la pagina */
+.contenedor {
+  width:1024px;
+  margin:0px auto;  
+}
+
+/* estilo que se aplica al div contenedor de cada imagen */
+.contenedor_img {
+	float: left;	
+	width:28%;
+}
+
+.contenedor_img_50 {
+	-webkit-transform:scale(1.50);
+	-moz-transform:scale(1.50);
+	-ms-transform:scale(1.50);
+	-o-transform:scale(1.50);
+	transform:scale(1.50);
+}
+
+.fila {
+    display: table-row;
+}
+
+/* estilo que se aplica al elemento imagen */
+img {
+	height: auto;
+	max-width: 100%;
+	padding: 10px;
+}
+
+/* estilo que se aplica al elemento cabecera que contiene la imagen */
+header {
+  text-align:center;
+  background: with;
+}
+
+/* estilo que se aplica al elemento section y aside */
+section {    
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  -o-border-radius:15px;
+  border-radius:15px;
+  float: left;
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid gray;   
+  margin-bottom: 50px;
+}
+
+/* estilo para todos los links. Afecta al menu y al pie de pagina */
+a {
+  color: #333333;
+  text-decoration: none;
+  width: 200px;
+}
+
+/* estilo de la seccion de de navegacion */
+nav {
+  overflow: hidden;
+  background:#31B6EA;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+/* estilo a la lista de la seccion de navegacion */
+nav ul {
+  float:left;
+  padding:0px;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+/* estilo a cada elemento de la lista de la seccion de navegacion */
+nav ul li {
+  display: inline-block;
+  float: none;
+  padding:3px 10px;
+  margin:2px;
+  background:#fafafa;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+
+/* Estilo exclusivo para los botones */
+li {
+	width: 200px;
+}
+	
+/* estilo a cada elemento de la lista de la seccion de navegacion 
+cuando el raton pasa por encima */
+nav ul li:hover {
+    background-color: #cccccc;
+    text-decoration: underline;
+}
+
+/* estilo del pie de página */
+footer  {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0px 10px 0px;
+  background-color: #31B6EA;
+  text-align: center;
+  color: white;
+}
+
+/* estilo del link del pie de página para diferenciarlo del genérico */
+footer a {
+  color: white;
+}
+/**************************************************************************************/
+/* Configuracione de estilos con CSS media queries									  */
+/**************************************************************************************
+/* Tablets horizontal, netbooks, laptops y PCs: superior a 1024. */
+@media screen and (max-width:1024px) {	
+	.contenedor {
+	  width: 768px;
+	  margin:0px auto;  
+	}
+	
+	.nombre {
+		font-size: 1.3em;
+		font-weight: bold;
+		padding: 15px;		
+	}
+
+	.descripcion {
+		font-size: 0.9em;
+		height: auto;
+	}
+	
+	.contenedor_img {
+		float: left;	
+		margin-right:15px; 
+	}
+}
+
+/* Tablets vertical: de 768 a 1024 */
+@media screen and (max-width:768px) {	
+	.contenedor {
+	  width: 480px;
+	  margin:0px auto;  
+	}
+	
+	.nombre {
+		font-size: 1.1em;
+		font-weight: bold;
+		padding: 15px;
+		
+	}
+
+	.descripcion {
+		font-size: 0.9em;
+		height: auto;
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+	
+	.contenedor_img {
+		float: left;	
+		margin-right:15px; 
+	}
+		
+	nav ul {
+		float:none;
+		clear:both;
+	 }
+	 
+	 a {
+		color: #333333;
+		text-decoration: none;
+		font-size:0.8em;
+	}
+}
+
+/* Smartphones horizontal: de 480 a 768 */
+@media screen and (max-width:480px) {	
+	.contenedor {
+	  width: 367px;
+	  margin:0px auto;  
+	}
+	.contenedor_img {
+		float: none;
+		text-align:center;
+		display:inline-block;		
+	}	
+	.nombre {
+		font-size: 1.1em;
+		font-weight: bold;
+		padding: 5px;
+	}
+	
+	.descripcion {
+		height: auto;		
+		font-size: 0.9em;
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+	
+	.fila {
+		display: table-row;
+		text-align: center;
+		width:100%;
+	}
+	
+	nav {
+		font-size:1.5em;
+	}
+	  
+	nav ul {
+		display: table;
+		text-align: center;
+	 	float: none;
+	    width:100%;
+	}
+
+	li {
+		width: 160px;
+	}	
+}

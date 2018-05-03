@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tarea colaborativa. Diseño Web en HTML5</title>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/fotografos.css">
+	<script>
+	 $(document).ready(function () {
+        $(".contenedor_img").mouseenter(function() {
+			$(this).addClass('contenedor_img_50');
+		});
+
+		$(".contenedor_img").mouseout(function() {
+			$(this).removeClass('contenedor_img_50');
+		});
+    });
+	</script>
+</head>
+<body>
+	<div class="contenedor">
+		<!-- Empieza Header -->
+		<header>
+			<div>
+				<center><img src="img/cabecera.png"></center>
+			</div>
+		</header>
+		<!-- Finaliza Header -->
+
+		<!-- Empieza Menu -->
+		<nav>
+			<ul>
+				<li><a href="fotografos.html">FOTÓGRAFOS</a></li>
+				<li><a href="#">GALERÍA FOTOGRÁFICA</a></li>
+			</ul>
+		</nav>
+		<!-- Finaliza Menu -->
+
+		<!-- Empieza Seccion de contenido -->
+		<section>
+			<div class="fila">
+				<div class="contenedor_img"><img src="img/anne.png"/></div>
+				<div class="nombre">Anne Geddes</div>
+				<div class="descripcion">Fotógrafa australiana, reconocida por sus creativos y hermosos retratos de bebés, es una de las mujeres que más se destaca en este campo de la fotografía. Según cifras a vendido más de 18 millones de libros en el mundo.</div>
+			</div>
+
+			<div class="fila">
+				<div class="contenedor_img"><img src="img/ouka.png" /></div>
+				<div class="nombre">Ouka Leele</div>
+				<div class="descripcion">Su verdadero nombre es Bárbara Allende Gil de Biedma, más conocida por su nombre artístico Ouka Leele. Es una artista, pintora, poetisa y fotógrafa española. Fue una de los protagonistas principales de la Movida madrileña de comienzos de la década de 1980. De formación autodidacta, destacan sus características fotografías en blanco y negro pintadas a mano con acuarela. En 2005, le fue concedido el Premio Nacional de Fotografía.</div>
+			</div>
+
+			<div class="fila">
+				<div class="contenedor_img"><img src="img/trey.png" /></div>
+				<div class="nombre">Trey Ratcliff</div>
+				<div class="descripcion">Es un americano blogger, autor y fotógrafo de Austin. Su fotografía se centra en los viajes, con localizaciones en los Estados Unidos, Japón, Francia, Argentina, China, Rusia, Islandia y Nueva Zelanda. Su obra ha sido representada por Getty Images , han sido destacados en la BBC, ABC, FOX, CBS y NBC.</div>
+			</div>
+
+			<div class="fila">
+				<div class="contenedor_img"><img src="img/cornelia.png" /></div>
+				<div class="nombre">Cornelia Adams</div>
+				<div class="descripcion">Cornelia Adams es una fotógrafa que se dedica a fotografia creativa y desde hace 20 años dirige una agencia de fotografos. es experta en tomar las imágenes relacionadas con la belleza, la moda y el estilo de vida urbano.</div>
+			</div>
+		</section>
+		<!-- Finaliza Seccion de contenido -->
+
+		<!-- Empieza pie de pagina -->
+		<footer>Copyright © 2018 | DIW - Tarea colaborativa | Judd Amaya y Eduardo Astolfi</a>
+		</footer>
+		<!-- Finaliza pie de pagina -->
+	</div>
+</body>
+</html>
